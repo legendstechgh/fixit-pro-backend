@@ -1,0 +1,1246 @@
+[
+  {
+    "id": "phone-battery-drain",
+    "device": "phone",
+    "keywords": ["battery drain", "draining fast", "battery dies", "loses charge", "battery life", "runs out quickly", "discharges", "not lasting"],
+    "diagnosis": "Rapid battery drain",
+    "category": "electronics",
+    "severity": "medium",
+    "difficulty": "easy",
+    "costRange": "$0 – $60",
+    "successRate": "88%",
+    "technicianRequired": false,
+    "causes": [
+      "Battery health has degraded below 80% capacity",
+      "Background apps running continuously and consuming power",
+      "Screen brightness or always-on display settings too high",
+      "Faulty battery failing to hold charge across cycles"
+    ],
+    "beginner_fixes": [
+      "Go to Settings → Battery and check battery health percentage",
+      "Enable battery saver or low-power mode immediately",
+      "Reduce screen brightness to 40–50% and disable always-on display",
+      "Turn off Wi-Fi, Bluetooth, and location services when not in use"
+    ],
+    "intermediate_fixes": [
+      "Review which apps consume the most battery in Settings → Battery → Usage",
+      "Disable background app refresh for all non-essential applications",
+      "Check for and install any pending operating system updates",
+      "Perform a full discharge-to-zero then full recharge cycle to recalibrate"
+    ],
+    "advanced_fixes": [
+      "Run a battery diagnostic using a third-party app (e.g. AccuBattery on Android)",
+      "If battery health is below 80%, replace the battery — phone/mail-in services cost $30–$60",
+      "Factory reset as a last resort if software corruption is suspected"
+    ],
+    "doNot": [
+      "Do not charge overnight repeatedly — it accelerates battery degradation",
+      "Do not use fast charging constantly; standard charging is gentler on the battery",
+      "Do not ignore battery health below 75% — it will worsen quickly"
+    ],
+    "lifespanNotes": "A replaced battery restores full-day performance. Original batteries typically last 2–3 years under normal use."
+  },
+
+  {
+    "id": "phone-wont-charge",
+    "device": "phone",
+    "keywords": ["won't charge", "not charging", "charging stopped", "no charge", "plugged in not charging", "charge not working", "charging port", "cable not working"],
+    "diagnosis": "Device not charging",
+    "category": "electronics",
+    "severity": "high",
+    "difficulty": "easy",
+    "costRange": "$0 – $80",
+    "successRate": "82%",
+    "technicianRequired": false,
+    "causes": [
+      "Charging port clogged with lint, dust, or debris",
+      "Damaged or counterfeit charging cable not delivering adequate power",
+      "Faulty power adapter or USB port on the charger",
+      "Charging port physically damaged or with bent pins",
+      "Software glitch preventing the charge management system from activating"
+    ],
+    "beginner_fixes": [
+      "Try a different certified charging cable — this resolves the issue ~40% of the time",
+      "Try a different power adapter and a different wall outlet",
+      "Inspect the charging port with a torch for visible lint or debris",
+      "Gently clean the charging port with a dry toothpick or soft brush — do not use metal objects"
+    ],
+    "intermediate_fixes": [
+      "Force restart the device while plugged in (hold Power + Volume Down for 10 seconds)",
+      "Try charging from a computer USB port to isolate whether the adapter is faulty",
+      "Check if wireless charging works — if yes, the physical port is the issue",
+      "Update device software, as some OS bugs affect charge detection"
+    ],
+    "advanced_fixes": [
+      "Use compressed air to clear the port (brief bursts only, hold can upright)",
+      "If port is physically damaged or corroded, a port replacement costs $40–$80 at a repair shop",
+      "If water damage is suspected, do not attempt to charge — leave in dry rice or silica gel for 48 hours first"
+    ],
+    "doNot": [
+      "Do not insert metal objects into the charging port to clean it",
+      "Do not charge a device you suspect has water damage",
+      "Do not bend or force the cable into the port if resistance is felt"
+    ],
+    "lifespanNotes": "A charging port replacement is a cost-effective repair. A clean port and quality cable typically solve this without hardware work."
+  },
+
+  {
+    "id": "phone-screen-cracked",
+    "device": "phone",
+    "keywords": ["cracked screen", "broken screen", "shattered", "screen broken", "glass cracked", "display cracked", "dropped phone", "screen smashed"],
+    "diagnosis": "Cracked or shattered display",
+    "category": "electronics",
+    "severity": "medium",
+    "difficulty": "hard",
+    "costRange": "$60 – $250",
+    "successRate": "95%",
+    "technicianRequired": true,
+    "causes": [
+      "Physical impact from dropping the device",
+      "Pressure applied to the screen while in a pocket or bag",
+      "Existing micro-crack that propagated under stress",
+      "Absence of a screen protector reducing impact resistance"
+    ],
+    "beginner_fixes": [
+      "Apply a clear adhesive screen protector immediately to prevent the crack spreading and protect fingers from glass",
+      "Check if the touch layer still functions — tap and swipe across all areas",
+      "Back up all data urgently in case the display fails completely",
+      "Check if your device warranty or phone insurance covers screen damage"
+    ],
+    "intermediate_fixes": [
+      "Get a repair quote from the manufacturer — official repairs often include a warranty",
+      "Compare with certified third-party repair shops, which are typically 30–40% cheaper",
+      "Check iFixit.com for your specific model to assess DIY replacement difficulty"
+    ],
+    "advanced_fixes": [
+      "Screen replacement is a hardware repair — order the correct OEM-spec display for your exact model",
+      "DIY replacement requires a heat gun, suction cup, spudger, and precision screwdrivers; cost is $40–$120 in parts",
+      "For flagship phones with Face ID or under-display fingerprint readers, always use a certified technician to avoid losing biometric functionality"
+    ],
+    "doNot": [
+      "Do not continue using a heavily cracked screen — glass shards can cause injury",
+      "Do not apply super glue or tape over the screen — it damages the digitizer",
+      "Do not attempt screen replacement without an anti-static mat if you have no experience"
+    ],
+    "lifespanNotes": "A professional screen replacement restores the device to near-new condition. The repair pays for itself if the device is under 2 years old."
+  },
+
+  {
+    "id": "phone-screen-flickering",
+    "device": "phone",
+    "keywords": ["screen flickering", "display flicker", "flickering screen", "screen flashing", "display blinking", "screen blinks", "flashing display"],
+    "diagnosis": "Display flickering or flashing",
+    "category": "electronics",
+    "severity": "medium",
+    "difficulty": "medium",
+    "costRange": "$0 – $150",
+    "successRate": "70%",
+    "technicianRequired": false,
+    "causes": [
+      "Loose or partially disconnected display ribbon cable",
+      "Software or graphics driver bug causing refresh rate instability",
+      "GPU or display controller hardware fault",
+      "Screen damaged internally from an impact without visible cracks"
+    ],
+    "beginner_fixes": [
+      "Force restart the device to rule out a temporary software glitch",
+      "Check if flickering occurs in Safe Mode — if not, a third-party app is the cause",
+      "Reduce screen brightness and disable adaptive brightness to test if it's display-load related",
+      "Check for operating system updates — graphics bugs are frequently patched"
+    ],
+    "intermediate_fixes": [
+      "Boot into Safe Mode and monitor for 30 minutes; if flickering stops, uninstall recently installed apps",
+      "Perform a display calibration if available in developer options",
+      "Back up data immediately — flickering often precedes full display failure"
+    ],
+    "advanced_fixes": [
+      "If flickering followed a drop, the ribbon cable connection may need reseating — this requires screen removal",
+      "A display replacement resolves hardware-based flickering; costs $80–$150 depending on model",
+      "If under warranty, submit for a manufacturer warranty claim before spending on repairs"
+    ],
+    "doNot": [
+      "Do not ignore persistent flickering — it often precedes complete display failure",
+      "Do not attempt to reseat the ribbon cable without proper ESD protection",
+      "Do not use the phone for extended periods if the flicker is worsening"
+    ],
+    "lifespanNotes": "Software-caused flickering is fully resolvable. Hardware-caused flickering requires screen replacement but is a well-understood repair."
+  },
+
+  {
+    "id": "phone-overheating",
+    "device": "phone",
+    "keywords": ["overheating", "phone hot", "getting hot", "too hot", "hot phone", "phone heats up", "burning", "warm to touch", "temperature warning"],
+    "diagnosis": "Device overheating",
+    "category": "electronics",
+    "severity": "high",
+    "difficulty": "medium",
+    "costRange": "$0 – $40",
+    "successRate": "78%",
+    "technicianRequired": false,
+    "causes": [
+      "CPU-intensive apps running in the background (games, video encoding, mining apps)",
+      "Defective battery generating excess heat during charging",
+      "Blocked ventilation or use in a high-ambient-temperature environment",
+      "Malware or a runaway process consuming 100% CPU"
+    ],
+    "beginner_fixes": [
+      "Immediately remove any phone case and place the device on a cool, flat surface",
+      "Close all apps and stop any active downloads or streaming",
+      "Disconnect the charger and do not charge while the device is hot",
+      "Do not place in a fridge or freezer — rapid temperature change causes condensation damage"
+    ],
+    "intermediate_fixes": [
+      "Check CPU and battery temperature using a diagnostics app",
+      "Review battery usage for any app consuming abnormally high CPU in the background",
+      "Scan for malware — cryptocurrency mining malware is a common hidden cause",
+      "Check if the phone overheats only while charging — this points to a faulty charger or battery"
+    ],
+    "advanced_fixes": [
+      "If a specific app is consistently causing heat, uninstall it and report to the developer",
+      "A swollen battery (visible as a bulge on the back) requires immediate professional replacement — do not charge",
+      "Thermal paste replacement is not applicable to phones; if hardware is the root cause, a motherboard or battery replacement is required"
+    ],
+    "doNot": [
+      "Do not use the device while it is significantly overheating — it can damage the battery permanently",
+      "Do not place in a freezer or submerge in water to cool it",
+      "Do not ignore a swollen battery — it is a fire and explosion risk"
+    ],
+    "lifespanNotes": "Software-caused overheating is fully resolvable. If a battery is causing heat, replace it promptly to avoid further damage to internal components."
+  },
+
+  {
+    "id": "phone-water-damage",
+    "device": "phone",
+    "keywords": ["water damage", "dropped in water", "wet phone", "phone fell in water", "water inside", "moisture", "got wet", "submerged", "phone in toilet"],
+    "diagnosis": "Water or liquid damage",
+    "category": "electronics",
+    "severity": "high",
+    "difficulty": "hard",
+    "costRange": "$50 – $200",
+    "successRate": "55%",
+    "technicianRequired": true,
+    "causes": [
+      "Direct submersion or heavy water exposure exceeding the device's IP rating",
+      "Liquid ingress through charging port, speaker grille, or SIM slot",
+      "Corrosion developing on internal circuit boards after exposure",
+      "No IP rating on the device providing any water resistance"
+    ],
+    "beginner_fixes": [
+      "Power off the device immediately — do NOT press power if it is on; just hold to power off",
+      "Remove SIM card and SIM tray to allow drainage",
+      "Shake the device gently with the port facing down to expel visible water",
+      "Pat dry with a lint-free cloth — do not rub"
+    ],
+    "intermediate_fixes": [
+      "Place in a sealed bag of silica gel packets (not rice — rice is a myth and adds starch) for 48–72 hours",
+      "Place near (not on) a gentle heat source such as a warm lamp to aid evaporation",
+      "Do not attempt to power on for at least 48 hours after drying"
+    ],
+    "advanced_fixes": [
+      "Take to a professional repair shop that offers ultrasonic cleaning — this removes corrosion from the board",
+      "Professional board-level repair (cleaning + corrosion treatment) costs $50–$120",
+      "If the device was submerged in salt water or another liquid, DIY recovery is unlikely — go straight to a professional"
+    ],
+    "doNot": [
+      "Do not charge the device until you are certain it is completely dry — this causes short circuits",
+      "Do not put in rice — it provides minimal absorption and can introduce starch into ports",
+      "Do not use a hair dryer on hot setting — heat accelerates corrosion"
+    ],
+    "lifespanNotes": "Recovery success drops significantly after 24 hours. Act within the first hour for the best outcome. Devices with IP67 or IP68 ratings have a higher survival rate."
+  },
+
+  {
+    "id": "phone-no-sound",
+    "device": "phone",
+    "keywords": ["no sound", "speaker not working", "silent", "audio not working", "can't hear", "sound stopped", "earpiece", "speaker broken", "muffled sound", "speakerphone"],
+    "diagnosis": "Speaker or audio system failure",
+    "category": "electronics",
+    "severity": "medium",
+    "difficulty": "easy",
+    "costRange": "$0 – $80",
+    "successRate": "85%",
+    "technicianRequired": false,
+    "causes": [
+      "Device stuck in headphone mode due to debris in the audio jack",
+      "Speaker grille blocked by lint or dirt reducing sound output",
+      "Volume accidentally muted via hardware switch or software setting",
+      "Speaker hardware failure from impact or water exposure"
+    ],
+    "beginner_fixes": [
+      "Check that the mute/silent switch is in the correct position (iPhones)",
+      "Verify volume is turned up and Do Not Disturb mode is off",
+      "Plug in headphones and remove them — this can reset a stuck headphone-mode state",
+      "Test sound in multiple apps (music, video, phone call) to isolate the issue"
+    ],
+    "intermediate_fixes": [
+      "Clean the speaker grille gently with a soft, dry brush",
+      "Restart the device and test again",
+      "Check audio output settings — it may be routed to Bluetooth or a connected device",
+      "Test with headphones — if audio works through headphones, the issue is the speaker hardware"
+    ],
+    "advanced_fixes": [
+      "A cotton swab very lightly dampened with isopropyl alcohol can clean a blocked headphone jack",
+      "Speaker replacement is a straightforward repair; costs $30–$80 at a shop or $15–$30 DIY",
+      "If audio works on calls but not media (or vice versa), the device has separate earpiece and loudspeaker — identify which one is faulty"
+    ],
+    "doNot": [
+      "Do not insert sharp objects into the speaker grille or headphone jack",
+      "Do not blow directly into the speaker grille — it can push debris further in",
+      "Do not attempt speaker replacement without following a model-specific guide"
+    ],
+    "lifespanNotes": "Cleaning resolves most audio issues. Hardware speaker replacement is a low-complexity repair with an excellent success rate."
+  },
+
+  {
+    "id": "phone-touchscreen-unresponsive",
+    "device": "phone",
+    "keywords": ["touch not working", "touchscreen unresponsive", "screen not responding", "won't tap", "touch screen frozen", "can't scroll", "dead zones", "screen doesn't respond"],
+    "diagnosis": "Touchscreen unresponsive or frozen",
+    "category": "electronics",
+    "severity": "high",
+    "difficulty": "medium",
+    "costRange": "$0 – $150",
+    "successRate": "75%",
+    "technicianRequired": false,
+    "causes": [
+      "Software freeze or unresponsive process locking the UI thread",
+      "Screen protector interfering with capacitive touch sensitivity",
+      "Physical damage to the digitizer layer beneath the glass",
+      "Moisture or condensation on the screen disrupting touch detection"
+    ],
+    "beginner_fixes": [
+      "Force restart immediately: hold Power + Volume Down for 10–15 seconds",
+      "Remove any thick or cheap screen protector and test touch response",
+      "Dry the screen completely — moisture interferes with capacitive touch",
+      "Remove gloves or check you are using bare skin, not a stylus that isn't compatible"
+    ],
+    "intermediate_fixes": [
+      "Boot into Safe Mode to test if a third-party app is causing the freeze",
+      "Check for OS updates — touchscreen firmware bugs are patched regularly",
+      "If only part of the screen is unresponsive (dead zones), map the affected area — this is a digitizer hardware issue"
+    ],
+    "advanced_fixes": [
+      "A digitizer replacement is required for persistent dead zones — cost is $60–$150 combined with screen replacement",
+      "If the issue appeared after a drop, the ribbon cable connection may have come loose and requires professional reseating",
+      "Factory reset (after full backup) resolves software-caused unresponsiveness in most cases"
+    ],
+    "doNot": [
+      "Do not tap harder — extra force does not help capacitive screens and can damage the digitizer",
+      "Do not use the device for important tasks while the touchscreen is unreliable",
+      "Do not skip the backup before factory resetting"
+    ],
+    "lifespanNotes": "Software freezes are fully resolvable. Digitizer damage is a repairable hardware issue, though cost depends on whether the screen assembly must also be replaced."
+  },
+
+  {
+    "id": "phone-camera-not-working",
+    "device": "phone",
+    "keywords": ["camera not working", "camera black screen", "camera fails", "photos blurry", "camera app crashes", "camera error", "lens", "blurry photos", "camera freezes"],
+    "diagnosis": "Camera malfunction or failure",
+    "category": "electronics",
+    "severity": "medium",
+    "difficulty": "medium",
+    "costRange": "$0 – $120",
+    "successRate": "80%",
+    "technicianRequired": false,
+    "causes": [
+      "Camera app software crash or permissions issue",
+      "Dirty or smudged lens giving soft or blurry images",
+      "Hardware camera module damaged from a drop or impact",
+      "OIS (Optical Image Stabilisation) module failure causing blur on recent models"
+    ],
+    "beginner_fixes": [
+      "Force-close the camera app completely and reopen it",
+      "Clean the camera lens with a microfibre cloth — fingerprints are the most common cause of blurry photos",
+      "Restart the device and test the camera again",
+      "Check if the camera works in a third-party app (Snapchat, WhatsApp) to isolate whether it's the native app or hardware"
+    ],
+    "intermediate_fixes": [
+      "Go to Settings → Apps → Camera → Clear Cache, then relaunch",
+      "Check that the camera app has Camera permissions enabled in Settings → Privacy",
+      "Install pending software updates — camera processing bugs are frequently patched",
+      "Test front and rear cameras separately to identify which module is affected"
+    ],
+    "advanced_fixes": [
+      "If a black screen persists after all software steps, the camera module is likely physically damaged",
+      "Camera module replacement costs $50–$120 at a repair shop depending on the model",
+      "Water ingress into the camera module causes fogging on the inside — this requires module replacement, not cleaning"
+    ],
+    "doNot": [
+      "Do not attempt to clean inside the lens housing — the lens is sealed and internal cleaning requires full disassembly",
+      "Do not ignore fogging inside the lens — it indicates water ingress that will worsen",
+      "Do not use abrasive materials to clean the lens coating"
+    ],
+    "lifespanNotes": "Most camera issues are software-related and fully resolvable. Hardware module replacement is a standard repair offered by most phone repair shops."
+  },
+
+  {
+    "id": "laptop-wont-turn-on",
+    "device": "laptop",
+    "keywords": ["won't turn on", "not turning on", "dead laptop", "black screen startup", "no power", "doesn't start", "won't boot", "laptop dead", "power button nothing"],
+    "diagnosis": "Laptop fails to power on",
+    "category": "electronics",
+    "severity": "high",
+    "difficulty": "medium",
+    "costRange": "$0 – $200",
+    "successRate": "72%",
+    "technicianRequired": false,
+    "causes": [
+      "Completely discharged or failed battery",
+      "Faulty power adapter not delivering voltage to the laptop",
+      "RAM module seated incorrectly preventing POST completion",
+      "Corrupted bootloader or failed storage device"
+    ],
+    "beginner_fixes": [
+      "Plug into a known-working wall outlet using the original charger and leave for 30 minutes before trying again",
+      "While plugged in, hold the power button for 15 seconds to perform a hard reset",
+      "Remove the battery (if removable), hold power for 30 seconds, reconnect battery, then try to boot",
+      "Try a different power adapter — borrow one with the same voltage and connector if possible"
+    ],
+    "intermediate_fixes": [
+      "Connect to an external monitor — if the external display works, the laptop's internal display is the issue, not the board",
+      "Listen for POST beep codes on startup — beep patterns indicate specific hardware failures",
+      "If there are any lights or sounds on pressing power but no display, RAM may need reseating",
+      "Check the charging indicator LED — if it does not light when plugged in, the adapter or charging circuit is faulty"
+    ],
+    "advanced_fixes": [
+      "To reseat RAM: power off, remove battery, open bottom panel, press the RAM tabs outward, remove sticks, clean contacts with an eraser, reseat firmly",
+      "If the laptop reaches POST but fails to boot OS, boot from a USB recovery drive to diagnose the storage device",
+      "A faulty power jack (not adapter) requires soldering — seek a technician if the plug is loose inside the port"
+    ],
+    "doNot": [
+      "Do not attempt to short-circuit the battery terminals to force a start",
+      "Do not open the laptop near static-generating surfaces without an anti-static wrist strap",
+      "Do not assume the motherboard is dead before ruling out the power adapter, RAM, and storage"
+    ],
+    "lifespanNotes": "Most no-power issues are solved by adapter or RAM fixes. Motherboard-level failures are rare but possible on older devices — weigh repair cost against replacement value."
+  },
+
+  {
+    "id": "laptop-overheating",
+    "device": "laptop",
+    "keywords": ["laptop overheating", "laptop hot", "fan loud", "loud fan", "fan running constantly", "thermal shutdown", "laptop shuts down heat", "cpu hot", "bottom hot"],
+    "diagnosis": "Laptop overheating and thermal throttling",
+    "category": "electronics",
+    "severity": "high",
+    "difficulty": "medium",
+    "costRange": "$5 – $80",
+    "successRate": "90%",
+    "technicianRequired": false,
+    "causes": [
+      "Heatsink and fan clogged with dust blocking airflow",
+      "Thermal paste between CPU/GPU and heatsink dried out and no longer conducting heat",
+      "Laptop used on soft surfaces (bed, sofa) blocking the bottom intake vents",
+      "Background processes running the CPU at 100% continuously"
+    ],
+    "beginner_fixes": [
+      "Immediately place the laptop on a hard, flat surface — never use on a bed or pillow",
+      "Use compressed air to blow through all vents — you will see dust come out if this is the cause",
+      "Close unnecessary applications and check Task Manager (Windows) or Activity Monitor (Mac) for CPU hogs",
+      "Purchase a laptop cooling stand ($10–$25) — they reduce temperatures by 5–15°C"
+    ],
+    "intermediate_fixes": [
+      "Download HWMonitor (Windows) or iStatMenus (Mac) to read real CPU temperature readings",
+      "Set a power plan to 'Balanced' rather than 'High Performance' — reduces heat significantly",
+      "Schedule a full compressed air clean of all vents quarterly",
+      "Check for BIOS/firmware updates — many include improved fan curve profiles"
+    ],
+    "advanced_fixes": [
+      "Open the laptop bottom panel and manually clean the fan blades and heatsink with compressed air and a soft brush",
+      "If the laptop is 3+ years old, replace the thermal paste between the CPU/GPU and heatsink — this alone can drop temperatures 20–30°C",
+      "Thermal paste replacement requires: isopropyl alcohol (90%+), cotton swabs, thermal paste ($5–$15), and a screwdriver set"
+    ],
+    "doNot": [
+      "Do not block the vents with tape or stickers",
+      "Do not run the laptop at maximum load on a surface that blocks the bottom vents",
+      "Do not apply too much thermal paste — a pea-sized amount in the centre is correct"
+    ],
+    "lifespanNotes": "Thermal maintenance is the single highest-ROI repair on any laptop. Resolving overheating directly extends CPU and battery life by years."
+  },
+
+  {
+    "id": "laptop-slow-performance",
+    "device": "laptop",
+    "keywords": ["slow laptop", "running slow", "laggy", "freezing", "sluggish", "takes forever", "slow performance", "hangs", "unresponsive", "slow to open"],
+    "diagnosis": "Degraded performance — slow startup and application response",
+    "category": "electronics",
+    "severity": "medium",
+    "difficulty": "easy",
+    "costRange": "$0 – $120",
+    "successRate": "85%",
+    "technicianRequired": false,
+    "causes": [
+      "Hard disk drive (HDD) instead of SSD causing slow read/write speeds",
+      "Insufficient RAM causing heavy disk paging under load",
+      "Startup programs overloading the system at boot",
+      "Malware or adware consuming CPU and memory resources",
+      "Storage near full — less than 10% free space severely impacts performance"
+    ],
+    "beginner_fixes": [
+      "Restart the laptop — many slowdowns are resolved by clearing RAM and restarting processes",
+      "Check disk space: if less than 10% is free, delete or move files immediately",
+      "Open Task Manager (Ctrl+Shift+Esc) and sort by CPU and Memory — kill any process using unusually high resources",
+      "Disable unnecessary startup programs: Task Manager → Startup tab → Disable all non-essential entries"
+    ],
+    "intermediate_fixes": [
+      "Run a full malware scan using Windows Defender or Malwarebytes Free",
+      "Clean up temporary files: Windows → Disk Cleanup → run on the C: drive",
+      "Check the storage drive health: run CrystalDiskInfo (Windows) or Disk Utility (Mac) — a failing drive causes severe slowdown",
+      "Increase virtual memory if RAM is consistently at 90%+ usage"
+    ],
+    "advanced_fixes": [
+      "Upgrading from an HDD to an SSD is the single most impactful upgrade — reduces boot time from 60+ seconds to under 10 seconds; cost $40–$100",
+      "Adding RAM (if slots available) from 4GB to 8GB or 8GB to 16GB resolves slowdown under multitasking; cost $20–$60",
+      "A clean OS reinstall removes all accumulated bloat — always back up first"
+    ],
+    "doNot": [
+      "Do not run 'registry cleaner' utilities — they rarely help and frequently cause new problems",
+      "Do not defragment an SSD — it shortens its lifespan; defragmentation is only for HDDs",
+      "Do not ignore a storage drive showing errors in disk health tools — data loss is imminent"
+    ],
+    "lifespanNotes": "An SSD upgrade transforms a slow 5-year-old laptop into a usable machine. It is almost always cheaper than buying a new laptop."
+  },
+
+  {
+    "id": "laptop-battery-not-charging",
+    "device": "laptop",
+    "keywords": ["laptop not charging", "plugged in not charging", "battery not charging", "charger not working laptop", "ac adapter", "power supply laptop", "charging issue laptop", "0% plugged in"],
+    "diagnosis": "Laptop battery not charging when plugged in",
+    "category": "electronics",
+    "severity": "high",
+    "difficulty": "medium",
+    "costRange": "$20 – $150",
+    "successRate": "80%",
+    "technicianRequired": false,
+    "causes": [
+      "Power adapter damaged or not providing sufficient wattage for the laptop model",
+      "Battery driver or firmware issue preventing charge detection (common on Windows)",
+      "Battery has reached end of life and no longer accepts a charge",
+      "Charging circuit on the motherboard faulty"
+    ],
+    "beginner_fixes": [
+      "Inspect the power adapter and cable carefully for cuts, kinks, or fraying near the connectors",
+      "Try a different wall outlet and confirm the outlet works with another device",
+      "Check the charger wattage matches or exceeds your laptop's requirement (check the sticker on the bottom of the laptop)",
+      "Remove the battery (if removable), run on AC power only — if it works, the battery needs replacing"
+    ],
+    "intermediate_fixes": [
+      "On Windows: open Device Manager → Batteries → right-click 'Microsoft ACPI-Compliant Control Method Battery' → Uninstall → restart to reinstall the battery driver",
+      "Run the Windows power troubleshooter: Settings → System → Troubleshoot",
+      "Check the charge port on the laptop for bent pins or debris",
+      "Monitor charging behaviour: if it charges to 60% and stops, a charge limit may be enabled in manufacturer software"
+    ],
+    "advanced_fixes": [
+      "Battery replacement: most laptop batteries cost $30–$80 and are a common DIY repair with iFixit guides available for most models",
+      "If the AC adapter connector is loose inside the port, the DC jack needs soldering — take to a technician",
+      "Third-party chargers can damage the charging circuit — always use the manufacturer's rated wattage"
+    ],
+    "doNot": [
+      "Do not use a charger with a lower wattage than specified — it will charge very slowly or not at all and may overheat",
+      "Do not ignore a battery stuck at 0% — continued use risks deep discharge damage",
+      "Do not continue using a visibly damaged charging cable"
+    ],
+    "lifespanNotes": "Laptop batteries typically last 3–5 years. Replacement is straightforward and returns the laptop to full portability."
+  },
+
+  {
+    "id": "laptop-no-display",
+    "device": "laptop",
+    "keywords": ["black screen laptop", "no display laptop", "blank screen", "screen not working laptop", "laptop screen dark", "backlight", "display not turning on", "white screen laptop"],
+    "diagnosis": "Laptop display not showing image",
+    "category": "electronics",
+    "severity": "high",
+    "difficulty": "medium",
+    "costRange": "$0 – $300",
+    "successRate": "75%",
+    "technicianRequired": false,
+    "causes": [
+      "Backlight inverter or LED backlight strip failure",
+      "Loose or damaged display cable (LVDS or eDP) running through the hinge",
+      "GPU failure preventing any video output",
+      "Display driver crash causing a black screen with the system still running"
+    ],
+    "beginner_fixes": [
+      "Connect an external monitor using HDMI or DisplayPort — if the external screen works, the issue is the internal display, not the GPU or OS",
+      "Ensure the laptop is powered on: listen for fan spin and drive activity sounds",
+      "Shine a torch at an angle against the screen in a dark room — very faint images indicate backlight failure, not display failure",
+      "Press Fn + the display toggle key (often F4 or F5) to cycle display modes"
+    ],
+    "intermediate_fixes": [
+      "If external monitor works: update or reinstall display drivers, then reboot",
+      "Check the hinge area — hinges that have been forced open too wide often damage the display cable",
+      "Hold the lid at different angles — if the image appears at some angles but not others, the cable is failing"
+    ],
+    "advanced_fixes": [
+      "Display cable replacement: run along the hinge, accessible by removing the screen bezel — cost $15–$30 in parts",
+      "Backlight replacement: if you see a very dim image, the backlight strip is failing — cost $20–$50 plus labour",
+      "Full screen panel replacement: $80–$300 depending on resolution and size; use the exact part number printed on the back of the current panel"
+    ],
+    "doNot": [
+      "Do not force the hinge open past 180 degrees — it stretches and damages the display cable",
+      "Do not conclude the motherboard is dead before testing with an external monitor",
+      "Do not peel the bezel off forcefully — use a plastic pry tool to avoid cracking it"
+    ],
+    "lifespanNotes": "Display cable and backlight replacements are cost-effective. A full panel replacement is worthwhile if the laptop is otherwise functional."
+  },
+
+  {
+    "id": "laptop-wifi-not-working",
+    "device": "laptop",
+    "keywords": ["wifi not working", "no wifi", "can't connect wifi", "wifi keeps disconnecting", "internet not working laptop", "wireless not working", "wifi drops", "no internet laptop"],
+    "diagnosis": "Wi-Fi connectivity failure or instability",
+    "category": "electronics",
+    "severity": "medium",
+    "difficulty": "easy",
+    "costRange": "$0 – $40",
+    "successRate": "92%",
+    "technicianRequired": false,
+    "causes": [
+      "Wi-Fi adapter driver corrupted or outdated",
+      "Physical Wi-Fi toggle switch accidentally disabled (present on some laptops)",
+      "Router or ISP outage rather than a laptop hardware issue",
+      "Wi-Fi card hardware failure"
+    ],
+    "beginner_fixes": [
+      "Check whether other devices connect to the same Wi-Fi — if not, the router is the issue",
+      "Toggle Airplane Mode on, wait 10 seconds, toggle off — this resets the wireless adapter",
+      "Check for a physical Wi-Fi switch on the side or front of the laptop",
+      "Restart both the router and the laptop"
+    ],
+    "intermediate_fixes": [
+      "Open Device Manager → Network Adapters → right-click Wi-Fi adapter → Update Driver",
+      "Run Windows Network Troubleshooter: Settings → System → Network → Troubleshoot",
+      "On Windows: open Command Prompt as administrator and run: netsh winsock reset then restart",
+      "Forget the network in Wi-Fi settings and reconnect fresh"
+    ],
+    "advanced_fixes": [
+      "Uninstall the Wi-Fi adapter from Device Manager then restart to force a clean driver reinstall",
+      "If the adapter does not appear in Device Manager at all, the Wi-Fi card may have failed — replacements cost $15–$40 and are user-installable on most laptops",
+      "An external USB Wi-Fi dongle ($10–$20) is an instant fix while you source a replacement card"
+    ],
+    "doNot": [
+      "Do not edit the registry to fix Wi-Fi unless following a verified guide — incorrect edits cause further issues",
+      "Do not assume the Wi-Fi card is dead before exhausting all driver and software fixes",
+      "Do not disable the network adapter in Device Manager thinking it will reset it — use Uninstall, not Disable"
+    ],
+    "lifespanNotes": "Wi-Fi issues are almost always software or driver related and fully resolvable. Hardware card failures are uncommon but cheap to fix."
+  },
+
+  {
+    "id": "laptop-keyboard-not-working",
+    "device": "laptop",
+    "keywords": ["keyboard not working", "keys not working", "laptop keyboard broken", "some keys don't work", "key stuck", "keyboard unresponsive", "typing not working", "keys missing"],
+    "diagnosis": "Keyboard partially or fully unresponsive",
+    "category": "electronics",
+    "severity": "medium",
+    "difficulty": "medium",
+    "costRange": "$0 – $80",
+    "successRate": "85%",
+    "technicianRequired": false,
+    "causes": [
+      "Liquid spilled on the keyboard shorting key circuits",
+      "Keyboard connector ribbon cable come loose from the motherboard",
+      "Filter Keys or Sticky Keys accessibility setting enabled causing delayed input",
+      "Individual key switches failing on older keyboards"
+    ],
+    "beginner_fixes": [
+      "Restart the laptop — driver crashes can disable the keyboard",
+      "Check Settings → Accessibility → Keyboard and disable Filter Keys and Sticky Keys",
+      "Plug in a USB keyboard — if it works, the internal keyboard is the hardware issue",
+      "Press and hold the affected key — sometimes debris beneath a key causes it to register as held"
+    ],
+    "intermediate_fixes": [
+      "Check Device Manager → Keyboards — if the keyboard shows a warning, uninstall and reinstall the driver",
+      "If keys are sticky or certain characters type randomly, liquid damage is likely — disconnect power and allow to dry for 48 hours",
+      "Check BIOS: if keyboard works during boot (BIOS screen) but not in Windows, it's a driver issue"
+    ],
+    "advanced_fixes": [
+      "Keyboard replacement is one of the most common laptop repairs — most models have keyboard assemblies available for $20–$60",
+      "On many models, the keyboard is attached to the top case and may need to be ordered as an assembly",
+      "Cleaning under keycaps with compressed air and isopropyl alcohol resolves sticky keys from minor spills"
+    ],
+    "doNot": [
+      "Do not pry keycaps off unless you have confirmed the replacement clips are available — they break easily",
+      "Do not continue using a keyboard if liquid was spilled — power off immediately to prevent board damage",
+      "Do not overlook the Filter Keys setting — it is a surprisingly common cause of keyboard issues"
+    ],
+    "lifespanNotes": "Keyboard replacement is affordable and straightforward. Most laptop keyboards are designed to be user-replaceable."
+  },
+
+  {
+    "id": "laptop-blue-screen",
+    "device": "laptop",
+    "keywords": ["blue screen", "bsod", "blue screen of death", "windows crash", "kernel panic", "system crash", "stop error", "restart loop", "crash laptop", "unexpected restart"],
+    "diagnosis": "System crash — blue screen or kernel panic",
+    "category": "electronics",
+    "severity": "high",
+    "difficulty": "hard",
+    "costRange": "$0 – $100",
+    "successRate": "78%",
+    "technicianRequired": false,
+    "causes": [
+      "Faulty or failing RAM module causing memory errors",
+      "Storage drive failure or file system corruption",
+      "Outdated, incompatible, or corrupted device drivers",
+      "Overheating causing the CPU to reach thermal shutdown threshold"
+    ],
+    "beginner_fixes": [
+      "Photograph or write down the STOP code displayed on the blue screen — it identifies the specific cause",
+      "Check if the crash occurs after a specific action (plugging in a device, running an app) — this narrows the driver",
+      "Run Windows Update — many BSODs are caused by bugs fixed in recent patches",
+      "Check internal temperatures at the time of crash using HWMonitor"
+    ],
+    "intermediate_fixes": [
+      "Run Windows Memory Diagnostic: Start → search 'mdsched' → restart and run — this tests all RAM",
+      "Run CHKDSK on the system drive: open Command Prompt as admin → chkdsk C: /f /r → schedule on restart",
+      "Boot into Safe Mode — if crashes stop in Safe Mode, a third-party driver is the cause",
+      "Roll back any recently installed drivers in Device Manager"
+    ],
+    "advanced_fixes": [
+      "Download and run the WinDbg tool against the minidump files in C:\\Windows\\Minidump to identify the exact failing driver or module",
+      "If RAM is faulty, reseat both sticks. Test with one stick at a time to identify the bad module. Replacement DDR4/DDR5 RAM is $20–$60",
+      "If CHKDSK finds drive errors, back up all data immediately and clone the drive to a new SSD"
+    ],
+    "doNot": [
+      "Do not ignore recurring BSODs — they indicate a hardware failure that will worsen",
+      "Do not reinstall Windows as a first step — diagnose the root cause first or the issue will recur",
+      "Do not attempt to open minidump files in Notepad — use WinDbg or an online BSOD analyser"
+    ],
+    "lifespanNotes": "BSODs caused by drivers are fully resolvable. RAM or storage failures require hardware replacement but are straightforward to diagnose and fix."
+  },
+
+  {
+    "id": "refrigerator-not-cooling",
+    "device": "refrigerator",
+    "keywords": ["fridge not cooling", "refrigerator warm", "not cold enough", "food spoiling", "fridge temperature too high", "not keeping cold", "warm fridge", "freezer not freezing"],
+    "diagnosis": "Refrigerator not maintaining temperature",
+    "category": "appliance",
+    "severity": "high",
+    "difficulty": "medium",
+    "costRange": "$0 – $400",
+    "successRate": "70%",
+    "technicianRequired": false,
+    "causes": [
+      "Condenser coils heavily coated with dust, blocking heat dissipation",
+      "Door seals worn or damaged, allowing warm air to enter continuously",
+      "Evaporator fan motor failed, preventing cold air circulation",
+      "Refrigerant leak causing gradual loss of cooling capacity"
+    ],
+    "beginner_fixes": [
+      "Check the temperature settings — the fridge compartment should be set to 2–4°C (37–40°F)",
+      "Ensure the fridge is not overpacked — air must circulate freely around food items",
+      "Check the door seals by closing the door on a piece of paper: if the paper slides out easily, the seal needs replacing",
+      "Verify the appliance is not positioned directly against a wall — leave at least 5cm clearance at the back and sides"
+    ],
+    "intermediate_fixes": [
+      "Unplug the fridge and vacuum or brush the condenser coils at the back or beneath the unit — dust buildup is the most common cause",
+      "Listen for the evaporator fan running inside the freezer compartment — if silent when the compressor is running, the fan motor has failed",
+      "Check if ice is building up excessively on the back wall of the freezer — this indicates a defrost system fault",
+      "Allow the fridge to run for 24 hours after cleaning coils before concluding it has not improved"
+    ],
+    "advanced_fixes": [
+      "A faulty door seal can be replaced by ordering the correct part number and pressing it into the door channel — cost $20–$60",
+      "Evaporator fan motor replacement is a DIY repair on most models — cost $30–$80 in parts",
+      "Refrigerant issues (no cooling despite compressor running) require a certified technician with handling equipment — call an appliance repair service"
+    ],
+    "doNot": [
+      "Do not use a sharp object to defrost ice buildup — pierce the evaporator coil and the fridge is written off",
+      "Do not attempt to recharge refrigerant yourself — it requires certification and specialised tools",
+      "Do not place hot food directly in the fridge — it forces the compressor to work excessively"
+    ],
+    "lifespanNotes": "Condenser cleaning and seal replacement are cheap, high-impact fixes. Compressor and refrigerant issues in older fridges may not be economical to repair."
+  },
+
+  {
+    "id": "refrigerator-making-noise",
+    "device": "refrigerator",
+    "keywords": ["fridge noisy", "refrigerator loud", "banging noise fridge", "rattling fridge", "humming loud", "clicking noise fridge", "vibration fridge", "fridge sound"],
+    "diagnosis": "Refrigerator producing abnormal noise",
+    "category": "appliance",
+    "severity": "medium",
+    "difficulty": "easy",
+    "costRange": "$0 – $150",
+    "successRate": "88%",
+    "technicianRequired": false,
+    "causes": [
+      "Condenser or evaporator fan blade partially obstructed by ice or debris",
+      "Fridge not level, causing compressor vibration to resonate through the frame",
+      "Items stored on top of the fridge vibrating with compressor operation",
+      "Drain pan beneath the fridge loose and rattling"
+    ],
+    "beginner_fixes": [
+      "Identify when the noise occurs: during compressor cycles, constantly, or intermittently — this narrows the cause significantly",
+      "Check that the fridge is level using a spirit level — adjust the front feet until level",
+      "Remove everything from the top of the fridge — loose items amplify compressor vibrations",
+      "Pull the fridge away from the wall and check that no pipe or tube at the back is vibrating against the cabinet"
+    ],
+    "intermediate_fixes": [
+      "Remove the lower back panel to inspect the condenser fan — clean with a brush and check that it spins freely",
+      "Check the drain pan (usually beneath the fridge, accessed from the front) is seated correctly in its clips",
+      "A gurgling noise is normal and indicates refrigerant flow — this is not a fault"
+    ],
+    "advanced_fixes": [
+      "If the noise is a grinding or scraping from inside the freezer, ice may have built up around the evaporator fan — defrost completely (unplug for 24 hours) and restart",
+      "A failing compressor produces a loud knocking or clicking sound before each start cycle — compressor replacement is expensive; compare cost vs. appliance age",
+      "Fan motor replacement for condenser or evaporator fans: $30–$80 and accessible with basic tools on most models"
+    ],
+    "doNot": [
+      "Do not ignore a loud knocking sound from the compressor — it may indicate imminent compressor failure",
+      "Do not place the fridge directly on carpet — use a hard floor mat to reduce vibration and improve airflow",
+      "Do not dismiss a continuous clicking sound — it often means the compressor is failing to start"
+    ],
+    "lifespanNotes": "Most noise issues are mechanical and inexpensive to resolve. A fridge making noise is still working — address it before it progresses to a cooling failure."
+  },
+
+  {
+    "id": "refrigerator-water-leaking",
+    "device": "refrigerator",
+    "keywords": ["fridge leaking water", "water under fridge", "refrigerator leak", "puddle under fridge", "water dripping fridge", "condensation fridge", "water inside fridge"],
+    "diagnosis": "Water leaking from refrigerator",
+    "category": "appliance",
+    "severity": "medium",
+    "difficulty": "easy",
+    "costRange": "$0 – $60",
+    "successRate": "90%",
+    "technicianRequired": false,
+    "causes": [
+      "Defrost drain blocked with food debris, causing meltwater to overflow onto the floor",
+      "Door seals failing and allowing warm air in, creating excess condensation",
+      "Water supply line to ice maker or water dispenser cracked or loose",
+      "Drain pan cracked or overflowing due to high ambient humidity"
+    ],
+    "beginner_fixes": [
+      "Identify where the water is coming from: under the fridge, inside the fridge, or from the back",
+      "Check the defrost drain at the back wall of the freezer — pour warm water into it to clear a blockage",
+      "Check the door seals for tears or gaps by inspecting the entire perimeter",
+      "If the fridge has a water dispenser or ice maker, inspect the supply line connection at the back"
+    ],
+    "intermediate_fixes": [
+      "To clear the defrost drain: unplug, remove all food, and use a turkey baster with warm water to flush the drain hole",
+      "Clean the drain pan beneath the fridge — if it is cracked, order a replacement; cost $15–$40",
+      "In humid climates, some external condensation is normal — check if it's worse when the door seals are failing"
+    ],
+    "advanced_fixes": [
+      "A fully blocked defrost drain may require the back panel of the freezer to be removed and the drain to be cleared manually",
+      "Water supply line replacement: turn off the water supply valve, disconnect the line, and replace with a new braided stainless line; cost $10–$25",
+      "Persistent internal condensation after seal replacement may indicate a refrigerant issue — call a technician"
+    ],
+    "doNot": [
+      "Do not ignore water pooling on the floor — it creates a slipping hazard and can warp flooring",
+      "Do not use a sharp object to poke the defrost drain — you risk puncturing the evaporator",
+      "Do not leave the fridge running if the water source is the compressor compartment — this may indicate a refrigerant line issue"
+    ],
+    "lifespanNotes": "Most leaks are caused by a blocked defrost drain or failing door seal — both are inexpensive fixes that extend the life of the appliance significantly."
+  },
+
+  {
+    "id": "refrigerator-ice-maker-not-working",
+    "device": "refrigerator",
+    "keywords": ["ice maker not working", "no ice", "ice maker broken", "ice dispenser", "ice maker stopped", "not making ice", "ice production"],
+    "diagnosis": "Ice maker not producing ice",
+    "category": "appliance",
+    "severity": "low",
+    "difficulty": "easy",
+    "costRange": "$0 – $200",
+    "successRate": "82%",
+    "technicianRequired": false,
+    "causes": [
+      "Ice maker turned off via the arm or switch on the unit",
+      "Water supply line to the ice maker kinked, frozen, or shut off",
+      "Ice bin full and the ice maker paused production automatically",
+      "Water inlet valve faulty, preventing water from entering the ice maker"
+    ],
+    "beginner_fixes": [
+      "Locate the ice maker's on/off arm or switch and confirm it is in the 'ON' position",
+      "Check that the ice bin is not full and that ice hasn't clumped into a solid block — break any clumps up",
+      "Verify the water supply valve behind the fridge is fully open",
+      "Check your home water pressure — ice makers require a minimum of 20 psi"
+    ],
+    "intermediate_fixes": [
+      "Inspect the water supply line at the back of the fridge for kinks or a section that may have frozen",
+      "Pour warm water along the supply line if you suspect it is frozen",
+      "Run a test cycle on the ice maker if your model supports it — check your user manual"
+    ],
+    "advanced_fixes": [
+      "Test the water inlet valve with a multimeter for continuity — a faulty valve will show no continuity and requires replacement; cost $30–$80",
+      "Ice maker assembly replacement: if the unit is over 5 years old and the motor or thermostat has failed, a complete module replacement ($80–$200) may be more practical than individual component repair",
+      "Check the freezer temperature — it must be at or below -12°C (10°F) for ice production to function"
+    ],
+    "doNot": [
+      "Do not use a knife or sharp object to break up ice clumps inside the ice bin — use warm water",
+      "Do not reconnect the water line without checking it is fully secured — a loose fitting causes leaks inside the cabinet",
+      "Do not assume the ice maker is broken after a power cut — it can take 24 hours to resume normal production"
+    ],
+    "lifespanNotes": "Most ice maker issues are supply line or setting related and cost nothing to fix. Module replacement is cost-effective if the refrigerator is otherwise in good condition."
+  },
+
+  {
+    "id": "washing-machine-not-draining",
+    "device": "washing machine",
+    "keywords": ["not draining", "water in drum", "standing water", "washer won't drain", "washing machine full of water", "drain pump", "pump blocked", "water left inside"],
+    "diagnosis": "Washing machine not draining",
+    "category": "appliance",
+    "severity": "high",
+    "difficulty": "easy",
+    "costRange": "$0 – $120",
+    "successRate": "88%",
+    "technicianRequired": false,
+    "causes": [
+      "Drain pump filter blocked with lint, coins, or small clothing items",
+      "Drain hose kinked, crushed, or installed at an incorrect height",
+      "Drain pump motor failed, unable to expel water",
+      "Selected programme does not include a drain cycle (e.g. a soak or hand-wash setting)"
+    ],
+    "beginner_fixes": [
+      "Check you are not on a pause or soak programme — select a Spin or Drain cycle and press Start",
+      "Check the drain hose at the back for kinks and ensure the end is not submerged in standing water in the drain standpipe",
+      "Place towels down and locate the drain pump filter — usually behind a small panel at the bottom front of the machine",
+      "Slowly open the filter cap to drain water (have a shallow tray ready) then remove and clean the filter"
+    ],
+    "intermediate_fixes": [
+      "Check inside the filter housing for coins, buttons, or bra underwires — these are the most common blockage items",
+      "Inspect the entire length of the drain hose for blockages — disconnect and blow through it to confirm it is clear",
+      "Run a hot maintenance wash at 60°C with a washing machine cleaner to clear any partial blockages"
+    ],
+    "advanced_fixes": [
+      "If the pump filter is clear and the hose is clear, the pump motor may have failed — access varies by model but is typically reached from the back or bottom panel",
+      "A replacement drain pump costs $30–$80 and is a DIY replacement on most front-loader models",
+      "Use a multimeter to test the pump motor for continuity before purchasing a replacement"
+    ],
+    "doNot": [
+      "Do not open the front door while water is still in the drum — it will flood the floor",
+      "Do not force the drum door open — many machines have a door interlock that prevents opening mid-cycle for safety",
+      "Do not run the machine again without clearing the filter first — it will simply fail to drain again"
+    ],
+    "lifespanNotes": "Filter cleaning is a maintenance task that should be done every 3 months. A blocked pump filter is the cause of drainage failures in the majority of cases."
+  },
+
+  {
+    "id": "washing-machine-not-spinning",
+    "device": "washing machine",
+    "keywords": ["not spinning", "won't spin", "clothes still wet", "washing machine spin", "spin cycle not working", "slow spin", "unbalanced load", "spin failure"],
+    "diagnosis": "Washing machine not completing spin cycle",
+    "category": "appliance",
+    "severity": "medium",
+    "difficulty": "easy",
+    "costRange": "$0 – $200",
+    "successRate": "82%",
+    "technicianRequired": false,
+    "causes": [
+      "Unbalanced load causing the machine to detect imbalance and abort the spin",
+      "Drain not fully completed before spin — partially blocked pump or hose",
+      "Lid switch or door interlock faulty, preventing spin for safety",
+      "Drive belt worn or snapped, disconnecting the drum from the motor"
+    ],
+    "beginner_fixes": [
+      "Redistribute the load manually — a single heavy item (jeans, a towel) on one side will always cause an imbalance abort",
+      "Reduce the load size — overloading prevents the drum reaching spin speed",
+      "Select a Spin Only cycle to test the spin independently of the wash cycle",
+      "Check that the machine door/lid is firmly closed and the latch clicks"
+    ],
+    "intermediate_fixes": [
+      "Check if water remains in the drum — the machine will not spin if it cannot first drain; resolve any drainage issue first",
+      "Inspect the door interlock/lid switch — if the machine thinks the door is open, it won't spin; test by pressing the door firmly and listening for the click",
+      "Check for an error code on the display — consult your model's user manual for the spin-related error codes"
+    ],
+    "advanced_fixes": [
+      "Access the rear or bottom panel and inspect the drive belt — if it is stretched, cracked, or broken, it needs replacing; cost $10–$30",
+      "A faulty door interlock (latch mechanism) replacement costs $20–$50 and is reachable with basic tools",
+      "Carbon brush replacement on the motor is needed on some older models — a worn brush prevents the motor reaching spin speed"
+    ],
+    "doNot": [
+      "Do not overload the drum — this is the single most common cause of spin failures and also damages the bearings over time",
+      "Do not force the door open mid-cycle — the interlock is a safety feature",
+      "Do not ignore unusual grinding or squealing sounds during spin — this indicates bearing wear which worsens rapidly"
+    ],
+    "lifespanNotes": "Load balancing and filter cleaning resolve most spin issues at zero cost. Drive belt replacement is affordable and restores full function."
+  },
+
+  {
+    "id": "washing-machine-leaking",
+    "device": "washing machine",
+    "keywords": ["washing machine leak", "washer leaking", "water on floor", "leaking washer", "water under washing machine", "front loader leak", "soap overflow"],
+    "diagnosis": "Washing machine leaking water",
+    "category": "appliance",
+    "severity": "high",
+    "difficulty": "medium",
+    "costRange": "$0 – $150",
+    "successRate": "85%",
+    "technicianRequired": false,
+    "causes": [
+      "Door gasket (rubber seal on front-loaders) torn, cracked, or accumulating mould",
+      "Too much detergent or incorrect detergent type causing excessive suds overflow",
+      "Inlet hose connection loose or washer seal perished",
+      "Drain pump housing cracked or pump filter cap not tightened after maintenance"
+    ],
+    "beginner_fixes": [
+      "Identify exactly where the water is coming from — front door, back connections, or underneath",
+      "Check whether you are using HE (High Efficiency) detergent if you have an HE machine — standard detergent causes excessive suds and overflow",
+      "Use the correct detergent dose — more detergent does not clean better and always causes leaks",
+      "Check inlet hose connections at both the tap and the back of the machine — hand-tighten if loose"
+    ],
+    "intermediate_fixes": [
+      "Inspect the door gasket on front-loaders for tears, holes, or accumulated debris — clean with a damp cloth and check for damage",
+      "Run an empty cycle and observe carefully — identify the precise moment and location the leak occurs",
+      "Check the soap dispenser drawer for blockages — a blocked dispenser causes water to overflow from the drawer"
+    ],
+    "advanced_fixes": [
+      "Door gasket replacement on a front-loader: access via the front panel, peel the gasket from its retaining rings, and fit the new seal — cost $30–$80 in parts",
+      "Replace the inlet hose if the rubber washers inside the connectors are perished — new washers are $2 or a replacement hose is $10–$20",
+      "A cracked drum or tub is a major repair — compare repair cost with appliance replacement"
+    ],
+    "doNot": [
+      "Do not use standard detergent in a high-efficiency machine — it always causes leaking and can damage the pump",
+      "Do not ignore mould on the door gasket — it causes odours, damages the seal, and can cause leaks",
+      "Do not overtighten the inlet hose connections with tools — hand-tight is correct; overtightening cracks the plastic fittings"
+    ],
+    "lifespanNotes": "Detergent issues and inlet hose leaks are free to resolve. Door gasket replacement is a straightforward repair that restores a watertight seal."
+  },
+
+  {
+    "id": "microwave-not-heating",
+    "device": "microwave",
+    "keywords": ["microwave not heating", "microwave won't heat", "food still cold", "not warming food", "microwave runs but no heat", "magnetron", "no heat microwave"],
+    "diagnosis": "Microwave operating but not heating food",
+    "category": "appliance",
+    "severity": "high",
+    "difficulty": "hard",
+    "costRange": "$0 – $300",
+    "successRate": "55%",
+    "technicianRequired": true,
+    "causes": [
+      "Magnetron tube failed — the component that generates microwave energy",
+      "High-voltage diode failed, preventing the magnetron from receiving sufficient voltage",
+      "Door interlock switch faulty, cutting power to the magnetron as a safety measure",
+      "High-voltage capacitor failed"
+    ],
+    "beginner_fixes": [
+      "Test with a mug of water: microwave for 1 minute on full power — water should be hot; if not, the heating system has failed",
+      "Check the power level is set to 100% (P-100) and not a low power level",
+      "Confirm the microwave is completing its cycle and not being interrupted mid-cook",
+      "Check whether the rotating ring and turntable are correctly seated — a displaced turntable can sometimes trigger a fault sensor"
+    ],
+    "intermediate_fixes": [
+      "Check and test all three door interlock switches — a faulty switch is the most safely accessible repair and costs $5–$15 per switch",
+      "Reset the microwave by unplugging for 2 minutes then plugging back in",
+      "If the microwave hums and sounds normal but food stays cold, the magnetron has almost certainly failed"
+    ],
+    "advanced_fixes": [
+      "WARNING: The high-voltage capacitor inside a microwave stores lethal charge (up to 2000V) even when unplugged — do not open the casing without discharging it",
+      "Magnetron replacement: the part costs $50–$150 but requires high-voltage safety knowledge — strongly recommend professional repair",
+      "For microwaves under $150: compare repair cost with replacement — a new unit may be more economical"
+    ],
+    "doNot": [
+      "Do not open the microwave casing without discharging the capacitor — it stores lethal voltage even when unplugged",
+      "Do not operate the microwave with the door open or with a damaged door seal",
+      "Do not attempt magnetron replacement without proper electrical safety training"
+    ],
+    "lifespanNotes": "A non-heating microwave usually indicates magnetron failure. Given the high-voltage hazard and repair cost, replacement is often the better economic decision for units over 5 years old."
+  },
+
+  {
+    "id": "microwave-sparking",
+    "device": "microwave",
+    "keywords": ["microwave sparking", "sparks in microwave", "arcing", "flashing inside microwave", "sparks when cooking", "lightning inside microwave", "microwave arcing"],
+    "diagnosis": "Microwave producing sparks or arcing",
+    "category": "appliance",
+    "severity": "high",
+    "difficulty": "easy",
+    "costRange": "$0 – $30",
+    "successRate": "92%",
+    "technicianRequired": false,
+    "causes": [
+      "Metal object, metallic trim, or foil inside the microwave",
+      "Waveguide cover (the flat panel on the interior wall) coated in food splatter and burning",
+      "Chipped or worn interior paint exposing bare metal",
+      "Metal rack or turntable ring incorrectly positioned"
+    ],
+    "beginner_fixes": [
+      "Stop the microwave immediately — do not continue operating it while sparking",
+      "Check for any metal items, foil, or metallic-edged crockery inside",
+      "Inspect the waveguide cover on the interior ceiling or side wall — if it is discoloured, burnt, or has holes, this is the cause",
+      "Clean the interior thoroughly — any large food deposits, especially fat splatter, can arc"
+    ],
+    "intermediate_fixes": [
+      "Remove and replace the waveguide cover — it is a cardboard or mica sheet held by one or two clips; replacement covers cost $5–$15 and are model-specific",
+      "If the interior paint is chipped, apply microwave-safe interior paint to reseal the exposed metal — available online for $10–$15",
+      "Run an empty 30-second test after cleaning to confirm the sparking has stopped before cooking food"
+    ],
+    "advanced_fixes": [
+      "If sparking continues after cleaning and waveguide cover replacement, the magnetron antenna tip may be damaged — this requires professional inspection",
+      "A heavily burnt waveguide cover that has created carbonisation on the cavity wall requires thorough cleaning before the new cover is fitted",
+      "Persistent arcing with no visible cause may indicate a faulty stirrer motor"
+    ],
+    "doNot": [
+      "Do not continue running a sparking microwave — it can cause a fire",
+      "Do not use aluminium foil in the microwave under any circumstances",
+      "Do not use crockery with metallic trim or gold/silver decoration in the microwave"
+    ],
+    "lifespanNotes": "Waveguide cover replacement is one of the cheapest and most effective microwave repairs. Addressing sparking promptly prevents permanent damage to the cavity."
+  },
+
+  {
+    "id": "microwave-turntable-not-rotating",
+    "device": "microwave",
+    "keywords": ["turntable not spinning", "microwave plate not rotating", "turntable stopped", "plate not turning microwave", "turntable broken", "tray not moving"],
+    "diagnosis": "Microwave turntable not rotating",
+    "category": "appliance",
+    "severity": "low",
+    "difficulty": "easy",
+    "costRange": "$5 – $50",
+    "successRate": "95%",
+    "technicianRequired": false,
+    "causes": [
+      "Turntable ring or roller guide misaligned or broken",
+      "Food debris jamming the turntable coupling or roller ring",
+      "Turntable motor failed",
+      "Coupler (the plastic D-shaped connector) cracked or worn"
+    ],
+    "beginner_fixes": [
+      "Remove the turntable plate and roller ring and clean the floor of the microwave cavity — debris is the most common cause",
+      "Check the roller ring is seated correctly in its circular track and that all three wheels are intact",
+      "Check the coupler on the motor shaft — it must be fully engaged with the bottom of the turntable plate",
+      "Confirm the turntable is not deactivated — some models have a Turntable On/Off button"
+    ],
+    "intermediate_fixes": [
+      "Inspect the coupler (plastic D-shaped piece on the floor) for cracks — replacements cost $3–$10 and are model-specific",
+      "Check that the roller ring legs are not cracked — if one leg is broken, the ring wobbles and jams; replacement ring costs $5–$15",
+      "Run the microwave empty and listen for the motor sound from beneath the cavity floor — silence indicates motor failure"
+    ],
+    "advanced_fixes": [
+      "Turntable motor replacement requires accessing the base of the microwave — unplug, remove the base plate, disconnect the two motor wires, fit new motor; cost $15–$40",
+      "Confirm the motor voltage is correct before ordering a replacement — check the motor label for voltage and RPM specifications",
+      "If the microwave heats food without the turntable rotating, cooking is still safe but uneven — rotate food manually or repair promptly"
+    ],
+    "doNot": [
+      "Do not force the turntable if it feels jammed — identify the obstruction first",
+      "Do not use the microwave without the turntable plate or roller ring unless the manual specifies it is safe to do so",
+      "Do not order a replacement motor without confirming the model number — turntable motors are not universal"
+    ],
+    "lifespanNotes": "Turntable faults are almost always inexpensive to resolve. A replacement coupler or roller ring for $5–$15 fixes the majority of cases."
+  },
+
+  {
+    "id": "ac-not-cooling",
+    "device": "air conditioner",
+    "keywords": ["ac not cooling", "air conditioner not cold", "ac blowing warm", "not cooling room", "ac weak", "air con not working", "warm air from ac", "ac ineffective"],
+    "diagnosis": "Air conditioner running but not cooling effectively",
+    "category": "hvac",
+    "severity": "high",
+    "difficulty": "medium",
+    "costRange": "$0 – $300",
+    "successRate": "75%",
+    "technicianRequired": false,
+    "causes": [
+      "Air filter heavily clogged, restricting airflow across the evaporator coil",
+      "Refrigerant level low due to a slow leak",
+      "Evaporator coil iced over, blocking all heat exchange",
+      "Outdoor condenser unit clogged with leaves and debris, unable to reject heat"
+    ],
+    "beginner_fixes": [
+      "Check and replace or clean the air filter — a clogged filter is responsible for the majority of reduced cooling performance",
+      "Ensure all room windows and doors are closed while the AC is running",
+      "Check the thermostat setting — confirm it is set to COOL mode and the set temperature is below the current room temperature",
+      "Inspect the outdoor unit for debris, vegetation, or objects blocking the grille"
+    ],
+    "intermediate_fixes": [
+      "Check for ice on the indoor unit coil — if iced over, turn the AC to FAN ONLY for 2 hours to defrost before cooling again",
+      "Clean the outdoor condenser coil with a garden hose (from the inside out, with the power off)",
+      "Check that supply registers in each room are open and not blocked by furniture",
+      "If the unit runs continuously without reaching the set temperature, inspect the refrigerant level (requires a technician)"
+    ],
+    "advanced_fixes": [
+      "Refrigerant recharge requires a certified HVAC technician — low refrigerant always indicates a leak that must be repaired first",
+      "Evaporator coil cleaning with a no-rinse foam cleaner improves efficiency significantly on units over 3 years old",
+      "If the compressor is short-cycling (turning on and off rapidly), a capacitor may have failed — a common repair costing $15–$50 in parts"
+    ],
+    "doNot": [
+      "Do not attempt to add refrigerant yourself — it requires certification and the leak must be found and repaired first",
+      "Do not block the area around the outdoor unit with plant growth or storage",
+      "Do not run the AC with a frozen evaporator coil — it causes compressor damage"
+    ],
+    "lifespanNotes": "Filter replacement and coil cleaning are annual maintenance tasks that maintain full cooling efficiency. Neglecting these typically cuts cooling capacity by 20–40%."
+  },
+
+  {
+    "id": "ac-not-turning-on",
+    "device": "air conditioner",
+    "keywords": ["ac won't turn on", "air conditioner not starting", "ac no power", "ac dead", "air con won't switch on", "ac not responding", "no power ac"],
+    "diagnosis": "Air conditioner not powering on",
+    "category": "hvac",
+    "severity": "high",
+    "difficulty": "easy",
+    "costRange": "$0 – $150",
+    "successRate": "85%",
+    "technicianRequired": false,
+    "causes": [
+      "Circuit breaker tripped due to a momentary overload or power surge",
+      "Thermostat batteries dead or thermostat settings misconfigured",
+      "Safety float switch triggered by condensate drain backup",
+      "Capacitor failure preventing the compressor or fan motor from starting"
+    ],
+    "beginner_fixes": [
+      "Check the circuit breaker panel — reset any tripped breaker for the AC circuit (turn fully OFF then ON)",
+      "Replace thermostat batteries and confirm the thermostat is set to COOL with a temperature below the room temperature",
+      "Check the indoor unit for a reset button and press it",
+      "Inspect the power cord and wall switch (if present) for window units"
+    ],
+    "intermediate_fixes": [
+      "Check the condensate drain pan — a full pan triggers a float safety switch that shuts the unit off; drain and clean the pan",
+      "After resetting a tripped breaker, wait 30 minutes before attempting to restart — some protection circuits have a time delay",
+      "Check whether the outdoor unit has its own disconnect box — confirm its fuse or breaker is intact"
+    ],
+    "advanced_fixes": [
+      "A failed capacitor is indicated by a humming sound when the unit tries to start but cannot — capacitor replacement is a common DIY repair; cost $10–$50",
+      "Discharge the capacitor before handling — use an insulated screwdriver across the terminals",
+      "If the breaker trips repeatedly after resetting, there is an electrical fault in the unit — call an HVAC technician before using the circuit again"
+    ],
+    "doNot": [
+      "Do not repeatedly reset a tripping breaker — a breaker that trips repeatedly indicates a fault that must be investigated",
+      "Do not attempt to bypass the float safety switch — it prevents water damage to your ceiling and floors",
+      "Do not handle capacitors without discharging them — they store charge and can cause serious injury"
+    ],
+    "lifespanNotes": "Most no-power issues are inexpensive to resolve. A tripped breaker or dead thermostat batteries are the most common causes and cost nothing to fix."
+  },
+
+  {
+    "id": "ac-water-leaking",
+    "device": "air conditioner",
+    "keywords": ["ac leaking water", "air conditioner dripping", "water from ac", "ac condensation", "ac water inside", "dripping ac unit", "water leak ac"],
+    "diagnosis": "Air conditioner leaking water indoors",
+    "category": "hvac",
+    "severity": "medium",
+    "difficulty": "easy",
+    "costRange": "$0 – $80",
+    "successRate": "90%",
+    "technicianRequired": false,
+    "causes": [
+      "Condensate drain line blocked with algae, mould, or debris",
+      "Dirty air filter restricting airflow and causing the evaporator coil to ice up and drip on defrost",
+      "Unit not level, causing condensate to overflow toward the indoor side",
+      "Drain pan cracked or corroded"
+    ],
+    "beginner_fixes": [
+      "Inspect the air filter immediately — a dirty filter is the most common indirect cause of AC water leaks",
+      "Locate the condensate drain line outlet (usually a white PVC pipe near the outdoor unit or into a drain) and check if it is dripping or blocked",
+      "For window units, check that the rear of the unit tilts slightly downward — this directs condensate outside",
+      "Turn off the unit if water is dripping onto electrical components or flooring"
+    ],
+    "intermediate_fixes": [
+      "Flush the condensate drain line: attach a wet/dry vacuum to the drain line access port and clear the blockage, or use a drain line flush tablet",
+      "Pour a cup of distilled white vinegar into the drain line access port monthly to prevent algae buildup",
+      "Inspect the drain pan for cracks — small cracks can be sealed with waterproof epoxy; larger damage requires pan replacement"
+    ],
+    "advanced_fixes": [
+      "If the drain line is severely blocked, use a drain snake or call an HVAC technician to clear it with nitrogen",
+      "Install a float switch on the drain pan if one is not already present — it will automatically shut off the unit if the drain backs up again",
+      "A technician should check the refrigerant level if the coil is repeatedly icing and causing drips after all drain and filter fixes"
+    ],
+    "doNot": [
+      "Do not ignore water leaking near the electrical components of the unit — it is an electrocution and short-circuit risk",
+      "Do not seal the drain line outlet — it must be open to drain condensate",
+      "Do not allow water to pool repeatedly on the ceiling or wall — structural damage accrues quickly"
+    ],
+    "lifespanNotes": "Drain line maintenance every 3–6 months prevents this issue entirely. A monthly vinegar flush is the most effective preventive measure."
+  }
+]

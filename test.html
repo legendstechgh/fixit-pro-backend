@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h2>FixIt-AI Tester</h2>
+    <input type="text" id="symptom" placeholder="Enter symptom...">
+    <button onclick="testAPI()">Diagnose</button>
+    <div id="result"></div>
+    
+    <script>
+        async function testAPI() {
+            const symptom = document.getElementById('symptom').value;
+            const response = await fetch('http://localhost:8000/diagnose', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ symptom })
+            });
+            const result = await response.json();
+            document.getElementById('result').innerHTML = JSON.stringify(result, null, 2);
+        }
+    </script>
+</body>
+</html>
