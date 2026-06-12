@@ -1,91 +1,117 @@
 # FixIt Pro Backend
 
-AI-powered diagnostic engine and API for FixIt Pro.
+![FixIt Pro](https://github.com/legendstechgh/fixit-pro-frontend/blob/main/public/fixIt-pro-Logo.png)
 
-## Overview
+## Intelligent Device Diagnostics API
 
-FixIt Pro Backend powers the diagnostic intelligence behind FixIt Pro, an AI-powered device diagnostics and repair assistant designed to help users identify faults, understand repair options, estimate repair costs, and determine when professional assistance is needed.
+The backend service powering **FixIt Pro**, a device diagnostics and repair assistance platform built for the Splunk Hackathon.
 
-The backend analyzes user-reported symptoms, matches them against a repair knowledge base, generates troubleshooting guidance, records diagnostic history, collects user feedback, and provides analytics for continuous improvement.
+FixIt Pro helps users identify common device problems, understand potential causes, receive repair guidance, estimate repair costs, and determine when professional assistance may be required.
+
+The backend processes user-reported symptoms, matches them against a structured repair knowledge base, generates troubleshooting recommendations, records diagnostic history, and produces observability data for monitoring and analytics.
 
 ---
 
-## Features
+# Live Deployment
 
-### Device Diagnostics
+Backend API:
+
+https://fixit-pro-backend.onrender.com
+
+Frontend Application:
+
+https://fixit-pro-splunk.netlify.app
+
+---
+
+# Features
+
+## Device Diagnostics
 
 * Symptom-based fault detection
+* Rule-based diagnostic engine
 * Multi-device support
 * Repair recommendation generation
 * Severity assessment
 * Confidence scoring
+* Cost estimation
+* Technician recommendation system
 
-### Repair Guidance
+---
 
+## Repair Guidance
+
+Each diagnosis includes:
+
+* Possible causes
 * Beginner repair steps
 * Intermediate repair steps
 * Advanced repair steps
 * Safety warnings
-* Technician recommendations
-
-### Intelligence Layer
-
-* Local AI enhancement
-* Improved diagnosis explanations
-* Risk assessment
-* Additional repair advice
-
-### Analytics & Monitoring
-
-* Diagnostic event logging
-* Usage statistics
-* Feedback collection
-* Splunk integration
-
-### Learning System
-
-* Diagnosis history storage
-* Success/failure tracking
-* User feedback recording
+* Success probability estimates
 
 ---
 
-## Supported Devices
+## Observability & Monitoring
 
-* Smartphones
-* Laptops
-* Refrigerators
-* Washing Machines
-* Microwaves
+Built for the Splunk Hackathon.
 
-Additional device categories can be added through the knowledge base.
+FixIt Pro generates structured diagnostic events including:
+
+* Device type
+* Reported symptom
+* Diagnosis result
+* Severity level
+* Confidence score
+* Repair outcome feedback
+
+These events can be routed into monitoring and analytics pipelines to support:
+
+* Trend detection
+* Usage analytics
+* Fault pattern analysis
+* Continuous system improvement
 
 ---
 
-## Tech Stack
+## Learning & Feedback
 
-### Backend
+* Diagnostic history tracking
+* User feedback collection
+* Success/failure recording
+* Future model improvement support
+
+---
+
+# Tech Stack
+
+## Backend
 
 * Node.js
 * Express.js
 
-### Data Storage
+## Storage
 
-* JSON-based knowledge base
-* Local history storage
+* JSON Knowledge Base
+* JSON History Storage
 
-### Services
+## Services
 
-* Splunk logging
-* Local AI enhancement
-* Diagnostic engine
+* Splunk Event Logging
+* Diagnostic Engine
+* Feedback System
+* Statistics Tracking
+
+## Deployment
+
+* Render
 
 ---
 
-## Project Structure
+# Project Structure
 
 ```text
-backend/
+fixit-pro-backend/
 │
 ├── data/
 │   ├── issues.json
@@ -101,21 +127,21 @@ backend/
 │   └── aiEnhancer.js
 │
 ├── server.js
-│
-└── package.json
+├── package.json
+└── README.md
 ```
 
 ---
 
-## API Endpoints
+# API Endpoints
 
-### Health Check
+## Health Check
 
 ```http
 GET /test
 ```
 
-Response:
+Example Response:
 
 ```json
 {
@@ -126,7 +152,7 @@ Response:
 
 ---
 
-### Run Diagnosis
+## Run Diagnosis
 
 ```http
 POST /diagnose
@@ -149,23 +175,24 @@ Example Response:
   "diagnosis": "Battery degradation detected",
   "severity": "medium",
   "confidence": "high",
-  "technicianRequired": false
+  "technicianRequired": false,
+  "costEstimate": "$10 - $80"
 }
 ```
 
 ---
 
-### Statistics
+## Statistics
 
 ```http
 GET /stats
 ```
 
-Returns system usage statistics.
+Returns platform statistics and usage information.
 
 ---
 
-### Feedback
+## Feedback
 
 ```http
 POST /feedback
@@ -180,16 +207,16 @@ Request:
 }
 ```
 
-Stores user feedback for future improvements.
+Stores user feedback for future system improvements.
 
 ---
 
-## Installation
+# Installation
 
 Clone the repository:
 
 ```bash
-git clone https://github.com/legendstechgh/-fixit-pro-backend.git
+git clone https://github.com/legendstechgh/fixit-pro-backend.git
 ```
 
 Navigate into the project:
@@ -204,14 +231,22 @@ Install dependencies:
 npm install
 ```
 
+Create a .env file:
+
+```env
+CLAUDE_API_KEY=
+```
+
+(API key optional)
+
 ---
 
-## Run Locally
+# Run Locally
 
-Start the server:
+Start the development server:
 
 ```bash
-node server.js
+npm start
 ```
 
 Backend runs on:
@@ -220,7 +255,7 @@ Backend runs on:
 http://localhost:8000
 ```
 
-Test connection:
+Test the server:
 
 ```text
 http://localhost:8000/test
@@ -228,48 +263,65 @@ http://localhost:8000/test
 
 ---
 
-## How It Works
+# How It Works
 
 1. User submits a device type and symptom.
-2. Backend searches the repair knowledge base.
-3. Matching issue patterns are identified.
-4. Repair recommendations are generated.
-5. Severity and confidence scores are assigned.
-6. Local AI enhancement improves explanations.
-7. Results are returned to the frontend.
-8. Diagnostic history and analytics are recorded.
+2. Backend receives the request.
+3. Diagnostic engine searches the knowledge base.
+4. Matching issue patterns are identified.
+5. Severity and confidence scores are generated.
+6. Repair recommendations are assembled.
+7. Feedback and analytics are recorded.
+8. Results are returned to the frontend.
 
 ---
 
-## Challenges Solved
+# Challenges Solved
 
-* Reliable symptom matching
-* Structured repair recommendations
-* User-friendly diagnostic output
-* Offline-capable intelligence layer
-* Analytics and feedback integration
-* Stable hackathon-ready architecture
+* Making diagnostics accessible to non-technical users
+* Creating structured repair guidance
+* Supporting offline operation without paid AI APIs
+* Building a reliable hackathon-ready architecture
+* Generating useful observability data
+* Capturing feedback for future improvements
 
 ---
 
-## Future Improvements
+# Future Improvements
 
-* Image-based diagnostics
-* Voice troubleshooting assistant
+* Voice-based diagnostics
+* Image-assisted fault detection
 * Predictive maintenance
-* Technician marketplace integration
 * Expanded repair knowledge base
-* Mobile API support
-* Machine learning model integration
+* Technician marketplace integration
+* Mobile application
+* ML-powered recommendations
+* Real Splunk dashboard integration
 
 ---
 
-## Hackathon Project
+# Splunk Hackathon Project
 
-Built as part of a hackathon project focused on making device troubleshooting more accessible, affordable, and practical while helping reduce unnecessary repair costs and electronic waste.
+FixIt Pro was built for the Splunk Hackathon to demonstrate how operational and diagnostic event data can be transformed into actionable insights.
+
+By combining device troubleshooting with observability concepts, the platform helps users solve problems while generating valuable telemetry for analysis and continuous improvement.
 
 ---
 
-## License
+# Developer
+
+**Alvin Akaba**
+
+Founder, Legends Tech
+
+GitHub:
+
+https://github.com/legendstechgh
+
+---
+
+# License
 
 MIT License
+
+Feel free to use, modify, and improve this project.
